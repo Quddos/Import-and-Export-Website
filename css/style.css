@@ -347,12 +347,35 @@ a {
   justify-content: center;
   margin: 1rem 0;
 }
+
+.ingredient .link a{
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 0.3rem 1.4rem;
+  border-radius: 5px;
+}
+.ingredient .link a:hover,
+.ingredient .link a:focus{
+  background-color: #ae764e;
+  color: var(--white-color);
+}
+
 /* COSTUMIZING THE ROW */
 .order-wrapper{
   background-color: #FFF7F7;
+  
   padding-top: 1rem;
   border-radius: 5px;
+  /*border-radius: 40px;
+  margin: 10px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  width: 80%;
+  margin-left: 150px; */
+  
 }
+
 .order-title h3{
   text-align: center;
   margin: 1.5rem 0;
@@ -376,8 +399,8 @@ a {
   padding: 0.5rem;
   background-color: var(--white-color);
   color: var(--black-color);
-  border-radius: 5px;
-  border: 1px solid #5a5a5a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px #00000059;
 }
 
 .order p{
@@ -437,23 +460,27 @@ a {
   justify-content: flex-end;
   align-items: end;
 }
-
 .card {
   width: 100%;
   padding: 0.5rem 1.5rem;
   border: 1px solid #c3c3c3;
-  border-radius: 10px;
+  border-radius:30px;
+  /* height: 140px; */
 }
 .card h4{
+  padding-top: 16px;
   text-align: center;
-  margin: 0.5rem;
+  margin: 2rem;
+  justify-content: space-between;
 }
 .card-dark{
   background: linear-gradient(270deg, rgba(255, 236, 219, 0.43) 0%, #FFECDB 100%);
+  /* width: 880px; */
 }
 .card-light{
   display: flex;
   flex-direction: column;
+  /* width: 880px; */
 }
 /* About Us */
 .about-us-wrapper {
@@ -473,18 +500,16 @@ a {
 }
 .about-title .title {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 18px;
   line-height: 1.7;
-  color: #5a5a5a;
+  color: #5A5A5A;
 }
 .about-title .title span {
-  font-size: 1rem;
-  color: var(--black-color);
-  font-weight: bolder;
   text-transform: uppercase;
+  color: black;
+  font-weight: 1200;
   display: block;
 }
-
 .who-we-are {
   display: flex;
   flex-direction: column;
@@ -497,7 +522,12 @@ a {
 } */
 
 .who-we-are-image img {
-  width: 50%;
+  width: 70%;
+  margin-left: 1.5rem;
+  /* height: 150px;*/
+  /* margin-left: 10%;  */
+  /* align-items: center;  */
+  /* padding-left: 2rem;  */
 }
 
 .who-we-are-para,
@@ -507,7 +537,10 @@ a {
 .key-service {
   max-width: 900px;
   margin: 2rem auto;
+  /* margin-left: 180px; */
   line-height: 1.6;
+
+ 
 }
 
 .why-love-us-container {
@@ -515,9 +548,11 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
+  
 }
 .why-love-us-container h3 {
   margin-bottom: 1rem;
+  /* padding: 0.8rem; */
 }
 
 .why-love-us {
@@ -526,6 +561,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+   padding: 2rem; 
 }
 .why-love-us span {
   background-color: var(--white-color);
@@ -568,10 +604,11 @@ a {
 /* Contact Us */
 .contact-us-title {
   text-align: center;
-  width: 150px;
-  padding-top: 1rem;
+  width: 500px;
+  padding-top: 18px;
+  padding-bottom: 10px;
   margin: 1rem auto;
-  border-top: 3px solid #ae764e;
+  border-top: 4px solid #ae764e;
 }
 .contact-us-wrapper {
   background-color: #ffecdb;
@@ -589,6 +626,8 @@ a {
   flex-direction: column;
   padding: 0 1rem;
   margin-bottom: 1rem;
+  padding-left: 2rem;
+  /* padding-left: 240px; */
 }
 
 .contact-us-link {
@@ -623,6 +662,8 @@ a {
   padding: 1rem;
   line-height: 2;
   color: #484848;
+  margin-bottom: 0px;
+  padding-left: 1rem;
 }
 
 form {
@@ -631,6 +672,9 @@ form {
   align-items: center;
   padding: 1rem;
 }
+
+
+
 
 input[type="text"],
 input[type="email"],
@@ -641,10 +685,21 @@ textarea {
   margin: 0.5rem;
   border: none;
   outline: none;
-  border: 1px solid #e0e;
-  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
 }
+input[type="text"]:hover,
+input[type="email"]:hover,
 
+textarea:hover {
+  width: 100%;
+  padding: 0.4rem;
+  margin: 0.5rem;
+  border:#dd5471;
+  outline:#fd4141;
+  border: 2px solid #fd4141;
+  border-radius: 2px;
+}
 input[type="submit"] {
   color: var(--white-color);
   background-color: #dd5471;
@@ -654,7 +709,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-  background-color: #e0e;
+  background-color: #dd5471;
 }
 
 .footer-container {
@@ -679,6 +734,9 @@ input[type="submit"]:focus {
   flex-direction: column;
   align-items: center;
   line-height: 2.4;
+  font-size: 12px;
+  padding-top: 13px;
+  padding-left: 5px;
 }
 
 .footer-links span {
@@ -713,15 +771,12 @@ input[type="submit"]:focus {
     padding-top: 1rem;
   }
 }
-#contact-navlink{
-  font-weight: normal;
-}
+
 .nav__link {
   color: var(--black-color);
   background-color: var(--white-color);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -752,6 +807,7 @@ input[type="submit"]:focus {
 /*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
+  margin-right: 3rem;
 }
 
 .dropdown__arrow {
@@ -769,7 +825,9 @@ input[type="submit"]:focus {
   column-gap: 0.5rem;
   font-weight: var(--font-semi-bold);
   transition: background-color 0.3s;
-  border-bottom: 1px solid var(--black-color);
+  border: 1px solid #7E6F1F;
+  border-width: 80%;
+  border-radius: 1px;
 }
 
 .dropdown__link:hover {
@@ -782,6 +840,7 @@ input[type="submit"]:focus {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
+
 }
 
 /* Show dropdown menu & submenu */
@@ -837,6 +896,9 @@ input[type="submit"]:focus {
     justify-content: initial;
     column-gap: 0.25rem;
   }
+  #contact-navlink{
+    font-weight: normal;
+  }
   .nav__link:hover {
     background-color: transparent;
   }
@@ -860,7 +922,7 @@ input[type="submit"]:focus {
 
   .dropdown__link,
   .dropdown__sublink {
-    padding-inline: 1rem 3.5rem;
+    padding-inline: 1.4rem 3.5rem;
   }
 
   .dropdown__subitem .dropdown__link {
@@ -912,7 +974,7 @@ input[type="submit"]:focus {
     width: 50%;
     margin: 0 auto;
   }
-  
+
   .img-box img{
     width: 80%;
     margin: 0 auto;
@@ -960,8 +1022,10 @@ input[type="submit"]:focus {
     flex-direction: row;
   }
   .who-we-are-image img {
-    width: 100px;
-    margin-right: 1.5rem;
+    
+    width: 120px;
+    margin-right: 3rem;
+    
   }
   /* Our Service */
   .service{
