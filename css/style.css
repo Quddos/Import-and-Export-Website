@@ -169,7 +169,7 @@ a {
   line-height: 1.9;
   max-width: 500px;
   margin: 0 auto;
-  font-weight: bold;
+  /* font-weight: bold; */
   
 }
 
